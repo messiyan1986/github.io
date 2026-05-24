@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://labs.tiffzhang.com/count/?bpm=60&ts=4-4&sub=4&vm=counting#g100-50-70.v100-80-60-30 -->
+<html lang="en" class="icons-ready fonts-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style><script src="chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/assets/main-world.ts-4ed993c7.js" type="module"></script>
+    
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0a0a0a">
+    <!-- Critical CSS: paints the app background during HTML parse so there is no FOUC
+         before the theme stylesheet loads. Keep small. Must match the app's body
+         background/color in its theme stylesheet. -->
+    <style>html{color-scheme:dark;background:#0a0a0a;color:#e8e8e8}</style>
+    <link rel="icon" type="image/svg+xml" href="https://labs.tiffzhang.com/icons/favicon-count.svg">
+    <link rel="apple-touch-icon" href="https://labs.tiffzhang.com/icons/favicon-count.svg">
+    <meta name="description" content="Free online metronome that counts out loud. Practice 3+3+2 rhythms, odd meters like 7/8 and 5/8, subdivisions, and swing feel with spoken beat numbers. Supports 1-e-+-a and Takadimi counting.">
+    <meta name="keywords" content="vocal counting metronome, online metronome with voice, 3-3-2 rhythm practice tool, metronome with subdivisions, odd time signature metronome, Takadimi metronome, counting metronome online, rhythm practice tool">
+    <title>Count Me In: A Metronome That Counts Out Loud</title>
+    <link rel="canonical" href="https://labs.tiffzhang.com/count/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Count Me In: A Metronome That Counts Out Loud">
+    <meta property="og:description" content="Free online metronome that counts out loud. Practice 3+3+2 rhythms, 7/8, 5/8, swing, and more with spoken counting, click, and drum sounds.">
+    <meta property="og:url" content="https://labs.tiffzhang.com/count/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tiff Zhang Labs">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Count Me In: Vocal Counting Metronome">
+    <meta name="twitter:description" content="A metronome that counts out loud. Practice 3+3+2, odd meters, swing, and Takadimi with spoken beat counting.">
+
+    <!-- JSON-LD: SoftwareApplication -->
+    <link rel="stylesheet" href="./index_files/materialIconsBootstrap-DPLQzdq3.css">
+    <link rel="stylesheet" href="./index_files/shared.css">
+    <link rel="stylesheet" href="./index_files/labs-cookie-consent.css">
+    <link rel="stylesheet" href="./index_files/count-CNNCrtKd.css">
+    <link rel="stylesheet" href="./index_files/700-toTFvmr4.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Count Me In",
+      "description": "A free online metronome that counts out loud. Practice asymmetric rhythms (3+3+2, 7/8, 5/8), subdivisions, and swing feel with spoken beat numbers, click tracks, and drum sounds.",
+      "url": "https://labs.tiffzhang.com/count/",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any (Web Browser)",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Spoken beat counting with voice synthesis",
+        "3+3+2 and custom beat groupings for compound and asymmetric meters",
+        "Subdivision levels: quarter, eighth, triplet, sixteenth, swing",
+        "Two counting systems: standard (1 e + a) and Takadimi",
+        "Per-beat muting and subdivision mixer",
+        "Click track and drum sounds",
+        "Song profiles for saving metronome presets",
+        "Shareable URL with full configuration state"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Tiff Zhang",
+        "url": "https://labs.tiffzhang.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage (AEO for rhythm practice queries) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a vocal counting metronome?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A vocal counting metronome speaks beat numbers out loud instead of just clicking. Count Me In uses synthesized voice samples so you can hear '1, 2, 3, 4' (or Takadimi syllables) while you play, helping you internalize the rhythm without watching a screen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 3+3+2 rhythm pattern?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 3+3+2 pattern divides 8 eighth notes into groups of 3, 3, and 2. It goes by many names depending on the tradition: tresillo in Afro-Cuban and Latin music, habanera in the 19th-century Cuban dance that spread worldwide, and it forms the first half of the son clave. The pattern has sub-Saharan African origins and you'll also hear it in funk, hip-hop, reggaeton, and pop music. In Count Me In, set the time signature to 8/8 and enter 3+3+2 as the beat grouping to practice it with vocal counting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I practice odd time signatures like 7/8 or 5/8?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set the time signature to 7/8 or 5/8 in Count Me In, then choose a beat grouping (for example, 2+2+3 or 3+2+2 for 7/8, or 3+2 or 2+3 for 5/8). Turn on voice counting so you can hear which beat you're on. Start at a slow tempo and increase as you get comfortable with where the accents fall."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Match pulse theme primary (see getAppTheme('pulse') in shared/ui/theme/appTheme.ts). -->
+    <style>:root { --labs-cc-accent: #00ff41; --labs-cc-on-accent: #0a0a0a; }</style>
+    <script defer="" src="./index_files/labs-cookie-consent.js.下载"></script>
+    <script type="module" crossorigin="" src="./index_files/count-BYkSPtk-.js.下载"></script>
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/vendor-0SlCUt8Q.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/materialIconsBootstrap-BXfWCzhx.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/SkipToMain-DEdcfQPg.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/timeSignatureUtils-BCOg67jf.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/musicInputConstants-BFDz2Fiz.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/drumSampleUrls-Bhd8XANo.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/clickService-CzSOjrMF.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/preciseScheduler-BNcEDub0.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/urlHistory-CNrpaHrN.js">
+    <link rel="modulepreload" crossorigin="" href="https://labs.tiffzhang.com/js/analytics-Bqyf_aFJ.js">
+  <script>if("serviceWorker"in navigator)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(s){s.unregister()})})</script>
+<script>addEventListener("beforeinstallprompt",function(e){e.preventDefault()});addEventListener("appinstalled",function(e){e.preventDefault()});</script>
+<script>
+(function(){
+  if(location.hostname==='localhost'||location.hostname==='127.0.0.1')return;
+  var V='1779432651393-50f7a7a7',K='__buildV';
+  if(sessionStorage.getItem(K)===V)return;
+  fetch('/build-version.txt?_='+Date.now(),{cache:'no-store'})
+    .then(function(r){return r.ok?r.text():V})
+    .then(function(t){
+      t=t.trim();
+      sessionStorage.setItem(K,t);
+      if(t!==V)location.reload();
+    })
+    .catch(function(){});
+})();
+</script>
+<script async="" src="./index_files/analytics.js.下载"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-25C3B5B84M"></script><style data-emotion="css" data-s=""></style></head>
+  <body>
+    <div id="root"><div class="pulse-app"><a class="skip-to-main" href="https://labs.tiffzhang.com/count/?bpm=60&amp;ts=4-4&amp;sub=4&amp;vm=counting#main">Skip to main content</a><header class="pulse-header"><div class="pulse-title-row"><h1 class="pulse-title "><button type="button" class="pulse-title-btn"><span class="pulse-title-letter" style="animation-delay: 0ms;">C</span><span class="pulse-title-letter" style="animation-delay: 50ms;">O</span><span class="pulse-title-letter" style="animation-delay: 100ms;">U</span><span class="pulse-title-letter" style="animation-delay: 150ms;">N</span><span class="pulse-title-letter" style="animation-delay: 200ms;">T</span><span class="pulse-title-letter" style="animation-delay: 250ms;">&nbsp;</span><span class="pulse-title-letter" style="animation-delay: 300ms;">M</span><span class="pulse-title-letter" style="animation-delay: 350ms;">E</span><span class="pulse-title-letter" style="animation-delay: 400ms;">&nbsp;</span><span class="pulse-title-letter" style="animation-delay: 450ms;">I</span><span class="pulse-title-letter" style="animation-delay: 500ms;">N</span></button></h1><button class="pulse-info-trigger " type="button" aria-label="About this app" aria-haspopup="true" aria-expanded="false">?</button></div><div class="pulse-header-actions"><button class="pulse-header-btn " type="button">PROFILES</button></div></header><main id="main" class="pulse-main"><div class="pulse-top-row"><section class="pulse-transport-left"><div class="pulse-bpm"><div class="pulse-tempo-marking" title="At ease">Adagio</div><div class="pulse-bpm-top"><button class="pulse-bpm-display" title="Click to type a BPM" type="button">60</button><span class="pulse-bpm-label">BPM</span></div><input class="pulse-bpm-slider" min="20" max="300" step="1" aria-label="BPM slider" type="range" value="60"><div class="pulse-bpm-actions"><button class="pulse-bpm-btn" type="button" title="Halve BPM">÷2</button><button class="pulse-bpm-btn" type="button" title="Decrease by 1 (hold to repeat)">−1</button><button class="pulse-bpm-btn" type="button" title="Increase by 1 (hold to repeat)">+1</button><button class="pulse-bpm-btn" type="button" title="Double BPM">×2</button></div><div class="pulse-bpm-presets"><button class="pulse-bpm-preset " type="button">40</button><button class="pulse-bpm-preset " type="button">50</button><button class="pulse-bpm-preset is-active" type="button">60</button><button class="pulse-bpm-preset " type="button">72</button><button class="pulse-bpm-preset " type="button">80</button><button class="pulse-bpm-preset " type="button">90</button><button class="pulse-bpm-preset " type="button">100</button><button class="pulse-bpm-preset " type="button">108</button><button class="pulse-bpm-preset " type="button">120</button><button class="pulse-bpm-preset " type="button">128</button><button class="pulse-bpm-preset " type="button">132</button><button class="pulse-bpm-preset " type="button">140</button><button class="pulse-bpm-preset " type="button">160</button><button class="pulse-bpm-preset " type="button">180</button><button class="pulse-bpm-preset " type="button">200</button></div></div></section><section class="pulse-transport-center"><button class="pulse-play-btn " aria-label="Play">PLAY</button><div class="pulse-beat-display"><div class="pulse-beat-row"><div class="pulse-beat-group"><div class="pulse-beat-cell is-accent" role="button" tabindex="0" aria-label="Click to mute 1."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">1</div></div><div class="pulse-beat-cell" aria-label="Click to mute e." role="button" tabindex="0"><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">e</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute +."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">+</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute a."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">a</div></div></div><div class="pulse-beat-group"><div class="pulse-beat-cell" aria-label="Click to mute 2." role="button" tabindex="0"><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">2</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute e."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">e</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute +."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">+</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute a."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">a</div></div></div><div class="pulse-beat-group"><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute 3."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">3</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute e."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">e</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute +."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">+</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute a."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">a</div></div></div><div class="pulse-beat-group"><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute 4."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">4</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute e."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">e</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute +."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">+</div></div><div class="pulse-beat-cell" role="button" tabindex="0" aria-label="Click to mute a."><div class="pulse-beat-bar-track"><div class="pulse-beat-bar-fill"></div></div><div class="pulse-beat-label">a</div></div></div></div></div><div class="pulse-playback-controls"><div class="pulse-sound-toggles"><button type="button" class="pulse-sound-toggle is-active" aria-label="Mute voice">VOICE: ON</button><button type="button" class="pulse-sound-toggle is-active" aria-label="Mute click">CLICK: ON</button><button type="button" class="pulse-sound-toggle is-active" aria-label="Mute drum">DRUM: ON</button></div><div class="pulse-voice-mode-toggle" role="radiogroup" aria-label="Counting style"><button type="button" class="pulse-voice-mode-btn is-active" role="radio" aria-checked="true">1 e + a</button><button type="button" class="pulse-voice-mode-btn " role="radio" aria-checked="false">Ta ka di mi</button></div></div></section><section class="pulse-transport-right"><div class="pulse-time-sig"><div class="pulse-time-sig-display"><button class="pulse-time-sig-num" type="button" aria-label="Edit numerator" aria-haspopup="true" aria-expanded="false">4</button><div class="pulse-time-sig-divider"></div><button class="pulse-time-sig-den" type="button" aria-label="Edit denominator" aria-haspopup="true" aria-expanded="false">4</button></div><div class="pulse-time-sig-controls"><button class="pulse-ts-btn is-active" type="button">4/4</button><button class="pulse-ts-btn " type="button">3/4</button><button class="pulse-ts-btn " type="button">2/4</button><button class="pulse-ts-btn " type="button">6/8</button><button class="pulse-ts-btn " type="button">9/8</button><button class="pulse-ts-btn " type="button">12/8</button><button class="pulse-ts-btn " type="button">5/8</button><button class="pulse-ts-btn " type="button">7/8</button><button class="pulse-ts-btn " type="button">8/8</button></div></div></section></div><div class="pulse-mixer"><div class="pulse-mixer-header"><span class="pulse-mixer-title">MIXER</span></div><div class="pulse-subdiv-selector" role="radiogroup" aria-label="Subdivision level"><button type="button" class="pulse-subdiv-btn " role="radio" aria-checked="false" aria-label="Subdivide: ♩"><div class="pulse-subdiv-vex-icon" aria-hidden="true" style="width: 80px; height: 44px; color: inherit;"><svg viewBox="0 0 24 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="38" rx="7" ry="5" transform="rotate(-20 10 38)"></ellipse><rect x="14.5" y="5" width="2.4" height="31"></rect></svg></div><span class="pulse-subdiv-label">♩</span></button><button type="button" class="pulse-subdiv-btn " role="radio" aria-checked="false" aria-label="Subdivide: ÷2"><div class="pulse-subdiv-vex-icon" aria-hidden="true" style="width: 80px; height: 44px; color: inherit;"><svg viewBox="0 0 50 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="38" rx="7" ry="5" transform="rotate(-20 10 38)"></ellipse><ellipse cx="38" cy="38" rx="7" ry="5" transform="rotate(-20 38 38)"></ellipse><rect x="14.5" y="5" width="2.4" height="31"></rect><rect x="42.5" y="5" width="2.4" height="31"></rect><rect x="14.5" y="3" width="30.4" height="4" rx="0.5"></rect></svg></div><span class="pulse-subdiv-label">÷2</span></button><button type="button" class="pulse-subdiv-btn " role="radio" aria-checked="false" aria-label="Subdivide: Sw♪"><div class="pulse-subdiv-vex-icon" aria-hidden="true" style="width: 80px; height: 44px; color: inherit;"><svg viewBox="0 0 56 56" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="0" width="1.4" height="6"></rect><rect x="14" y="0" width="12" height="1.4"></rect><text x="30" y="7" text-anchor="middle" font-size="9" font-weight="700" font-family="serif">3</text><rect x="34" y="0" width="11" height="1.4"></rect><rect x="43.6" y="0" width="1.4" height="6"></rect><ellipse cx="10" cy="46" rx="7" ry="5" transform="rotate(-20 10 46)"></ellipse><rect x="14.5" y="13" width="2.4" height="31"></rect><ellipse cx="38" cy="46" rx="7" ry="5" transform="rotate(-20 38 46)"></ellipse><rect x="42.5" y="13" width="2.4" height="31"></rect><path d="M43 12 C47.5 12, 54 18, 52 27 C51 22, 47.5 19, 43 19 Z"></path></svg></div><span class="pulse-subdiv-label">Sw♪</span></button><button type="button" class="pulse-subdiv-btn " role="radio" aria-checked="false" aria-label="Subdivide: ÷3"><div class="pulse-subdiv-vex-icon" aria-hidden="true" style="width: 80px; height: 44px; color: inherit;"><svg viewBox="0 0 72 56" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><rect x="14.5" y="0" width="1.4" height="6"></rect><rect x="14.5" y="0" width="14" height="1.4"></rect><text x="36" y="7" text-anchor="middle" font-size="9" font-weight="700" font-family="serif">3</text><rect x="43" y="0" width="14" height="1.4"></rect><rect x="55.6" y="0" width="1.4" height="6"></rect><ellipse cx="10" cy="46" rx="7" ry="5" transform="rotate(-20 10 46)"></ellipse><ellipse cx="34" cy="46" rx="7" ry="5" transform="rotate(-20 34 46)"></ellipse><ellipse cx="58" cy="46" rx="7" ry="5" transform="rotate(-20 58 46)"></ellipse><rect x="14.5" y="13" width="2.4" height="31"></rect><rect x="38.5" y="13" width="2.4" height="31"></rect><rect x="62.5" y="13" width="2.4" height="31"></rect><rect x="14.5" y="11" width="50.4" height="4" rx="0.5"></rect></svg></div><span class="pulse-subdiv-label">÷3</span></button><button type="button" class="pulse-subdiv-btn is-active" role="radio" aria-checked="true" aria-label="Subdivide: ÷4"><div class="pulse-subdiv-vex-icon" aria-hidden="true" style="width: 80px; height: 44px; color: inherit;"><svg viewBox="0 0 72 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><ellipse cx="7" cy="38" rx="6" ry="4.5" transform="rotate(-20 7 38)"></ellipse><ellipse cx="25" cy="38" rx="6" ry="4.5" transform="rotate(-20 25 38)"></ellipse><ellipse cx="43" cy="38" rx="6" ry="4.5" transform="rotate(-20 43 38)"></ellipse><ellipse cx="61" cy="38" rx="6" ry="4.5" transform="rotate(-20 61 38)"></ellipse><rect x="11" y="5" width="2.2" height="31"></rect><rect x="29" y="5" width="2.2" height="31"></rect><rect x="47" y="5" width="2.2" height="31"></rect><rect x="65" y="5" width="2.2" height="31"></rect><rect x="11" y="3" width="56.2" height="3.5" rx="0.5"></rect><rect x="11" y="9" width="56.2" height="3.5" rx="0.5"></rect></svg></div><span class="pulse-subdiv-label">÷4</span></button></div><div class="pulse-mixer-channels" style="grid-template-columns: repeat(4, 1fr);"><div class="pulse-channel"><span class="pulse-channel-label" aria-label="Beat 1 of each measure in 4/4. This is the strongest pulse.">DOWNBEAT <span class="pulse-channel-sublabel">&gt;</span></span><input class="pulse-channel-slider" min="0" max="1" step="0.01" aria-label="DOWNBEAT volume" type="range" value="1"><span class="pulse-channel-value">100</span><div class="pulse-channel-mutes"><button type="button" class="pulse-channel-mute is-on" aria-label="Voice for downbeat is on. Toggle to mute.">V</button><button type="button" class="pulse-channel-mute is-on" aria-label="Metronome tick for downbeat is on. Toggle to mute.">C</button><button type="button" class="pulse-channel-mute is-on" aria-label="Drum sound for downbeat is on. Toggle to mute.">D</button></div></div><div class="pulse-channel"><span class="pulse-channel-label" aria-label="The other main beats: beats 2, 3, 4 in 4/4.">BEAT <span class="pulse-channel-sublabel">♩</span></span><input class="pulse-channel-slider" min="0" max="1" step="0.01" aria-label="BEAT volume" type="range" value="0.8"><span class="pulse-channel-value">80</span><div class="pulse-channel-mutes"><button type="button" class="pulse-channel-mute is-on" aria-label="Voice for beat is on. Toggle to mute.">V</button><button type="button" class="pulse-channel-mute is-on" aria-label="Metronome tick for beat is on. Toggle to mute.">C</button><button type="button" class="pulse-channel-mute is-on" aria-label="Drum sound for beat is on. Toggle to mute.">D</button></div></div><div class="pulse-channel"><span class="pulse-channel-label" aria-label="The &quot;+&quot; between each beat — halfway through each beat in 4/4 ÷2.">OFF-BEAT <span class="pulse-channel-sublabel">&amp;</span></span><input class="pulse-channel-slider" min="0" max="1" step="0.01" aria-label="OFF-BEAT volume" type="range" value="0.6"><span class="pulse-channel-value">60</span><div class="pulse-channel-mutes"><button type="button" class="pulse-channel-mute is-on" aria-label="Voice for beat is on. Toggle to mute.">V</button><button type="button" class="pulse-channel-mute is-on" aria-label="Metronome tick for beat is on. Toggle to mute.">C</button><button type="button" class="pulse-channel-mute is-on" aria-label="Drum sound for beat is on. Toggle to mute.">D</button></div></div><div class="pulse-channel"><span class="pulse-channel-label" aria-label="The &quot;e&quot; and &quot;a&quot; sixteenth notes — the finest subdivisions, falling between the beat and the &quot;+&quot;. Each beat in 4/4 ÷4 is counted &quot;1 e + a&quot;.">SUB-BEAT <span class="pulse-channel-sublabel">e/a</span></span><input class="pulse-channel-slider" min="0" max="1" step="0.01" aria-label="SUB-BEAT volume" type="range" value="0.3"><span class="pulse-channel-value">30</span><div class="pulse-channel-mutes"><button type="button" class="pulse-channel-mute is-on" aria-label="Voice for sub-beat is on. Toggle to mute.">V</button><button type="button" class="pulse-channel-mute is-on" aria-label="Metronome tick for sub-beat is on. Toggle to mute.">C</button><button type="button" class="pulse-channel-mute is-on" aria-label="Drum sound for sub-beat is on. Toggle to mute.">D</button></div></div></div></div></main><footer class="pulse-seo-footer"><h2 class="pulse-sr-only">About Count Me In</h2><p class="pulse-seo-description">Practice asymmetric rhythms and subdivisions with spoken counting, Takadimi syllables, clicks, and drums.</p><div class="pulse-seo-links-label">EXAMPLES</div><nav class="pulse-seo-links" aria-label="Example configurations"><a href="https://labs.tiffzhang.com/count/?bpm=100&amp;ts=8-8&amp;sub=2&amp;vm=counting&amp;bg=3.3.2">3+3+2 in 8/8</a><a href="https://labs.tiffzhang.com/count/?bpm=126&amp;ts=7-8&amp;sub=2&amp;vm=counting&amp;bg=2.2.3">7/8 (2+2+3)</a><a href="https://labs.tiffzhang.com/count/?bpm=80&amp;ts=5-8&amp;sub=2&amp;vm=counting&amp;bg=3.2">5/8 (3+2)</a><a href="https://labs.tiffzhang.com/count/?bpm=80&amp;ts=4-4&amp;sub=4&amp;vm=takadimi">Takadimi in 4/4</a><a href="https://labs.tiffzhang.com/count/?bpm=108&amp;ts=4-4&amp;sub=swing8&amp;vm=takadimi">Swing eighths</a><a href="https://labs.tiffzhang.com/count/?bpm=90&amp;ts=12-8&amp;sub=2&amp;vm=counting">12/8 shuffle</a></nav></footer></div></div>
+  
+
+<yd-mg-icon style="position: fixed; z-index: 2147483647;"><template shadowrootmode="open"><style>
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all {
+    direction: ltr;
+}
+.all > * {
+    direction: rtl;
+}
+.hidden {
+    display: none;
+    transition: width 0.3s linear;
+}
+.container:hover .hidden {
+    width: var(--131b0bc3);
+    height: var(--367772ca);
+    display: flex;
+}
+.container {
+    position: fixed;
+    top:var(--8b7ed71a);
+    right:var(--2c4e45ba);
+    width: var(--b2ad46e2);
+    height: var(--14b33b7e);
+    background-color: #fff;
+    border-radius: var(--e55f886a);
+    box-shadow: 0 0 10px #b3b5b8;
+    transition: width 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container:hover {
+    width: var(--301156d1);
+    border-radius: var(--e55f886a);
+    justify-content: space-around;
+}
+.icon {
+    width: var(--131b0bc3);
+    height: var(--367772ca);
+    cursor: pointer;
+    user-select: none;
+}
+.icon:hover {
+}
+.yd-translate-loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    height: var(--367772ca);
+    width:  var(--131b0bc3);
+    animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+0% { transform: rotate(0deg);
+}
+100% { transform: rotate(360deg);
+}
+}
+@keyframes append-animate {
+from {
+        opacity: 0;
+}
+to {
+        opacity: 1;
+}
+}
+.popup {
+  animation: popup 0.3s forwards;
+}
+@keyframes popup {
+0% {
+    opacity: 0;
+    transform: scale(0);
+}
+100% {
+    opacity: 1;
+    transform: scale(1);
+}
+}
+</style><div class="all" style="position: fixed; z-index: 2147483647; --131b0bc3: 22px; --367772ca: 22px; --8b7ed71a: 0px; --2c4e45ba: 0px; --b2ad46e2: 26px; --14b33b7e: 26px; --e55f886a: 13px; --301156d1: 78px;"><!----></div></template></yd-mg-icon><yd-mg-block-icon><template shadowrootmode="open"><style>@charset "UTF-8";
+.disabled-element[data-v-d3135d60] {
+  cursor: not-allowed;
+}
+.all[data-v-d3135d60] {
+  position: absolute;
+  z-index: 1;
+}
+.all .container[data-v-d3135d60] {
+  width: var(--5a3ced10);
+  height: var(--58dc89c6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all .container .yd-line[data-v-d3135d60] {
+  display: block;
+  position: absolute;
+  height: var(--c03ec7f0);
+  top: var(--7808ebd8);
+  left: var(--891c21b0);
+}
+.all .container .yd-line .orignal[data-v-d3135d60] {
+  padding: 1px;
+  background-color: #E4E7F3;
+  height: var(--5934d8d6);
+}
+.all .container .yd-line .yd[data-v-d3135d60] {
+  padding: 1px;
+  background-color: #FF939E;
+  height: var(--4d327ada);
+}
+.all .container .yd-line .llm[data-v-d3135d60] {
+  padding: 1px;
+  background-color: #2485FF;
+  height: var(--18678bd3);
+}
+.all .container .tooltip-container[data-v-d3135d60] {
+  display: inline-block;
+  position: absolute;
+  top: var(--147b79a2);
+  left: var(--7afb4d26);
+}
+.all .container .tooltip-container .icon[data-v-d3135d60] {
+  width: var(--5a3ced10);
+  height: var(--58dc89c6);
+  background-image: var(--4a440a69);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.all .container .tooltip-container .icon[data-v-d3135d60]::before {
+  content: var(--4809e853);
+  display: none;
+}
+.all .container .tooltip-container .icon[data-v-d3135d60]:hover {
+  box-shadow: 0px 4px 10px rgba(56, 112, 200, 0.16);
+  transition: width 0.3s linear;
+  background-image: var(--4809e853);
+  cursor: pointer;
+}
+.all .container .tooltip-container .llmIcon[data-v-d3135d60] {
+  width: var(--5a3ced10);
+  height: var(--58dc89c6);
+  background-image: var(--4a440a69);
+  border-radius: 5px;
+}
+.all .container .tooltip-container .llmIcon[data-v-d3135d60]:hover {
+  width: var(--5a3ced10);
+  height: 48px;
+  background-image: var(--11da4116);
+  border-radius: 5px;
+}
+.all .container .tooltip-container .tooltip[data-v-d3135d60] {
+  position: absolute;
+  top: var(--523390c5);
+  /* 放在元素的上方 */
+  left: var(--178a82d2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #F9FBFF;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(216, 217, 219, 0.5);
+  box-shadow: 0px 1.2px 3.6px 0px rgba(0, 0, 0, 0.1), 0px 2px 20px 0px rgba(27, 19, 98, 0.08);
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0em;
+  user-select: none;
+  color: #2A2B2E;
+}
+.all .container .tooltip-container .llmTooltip[data-v-d3135d60] {
+  position: absolute;
+  top: var(--523390c5);
+  /* 放在元素的上方 */
+  left: var(--178a82d2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #F9FBFF;
+  padding: 8px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(216, 217, 219, 0.5);
+  box-shadow: 0px 1.2px 3.6px 0px rgba(0, 0, 0, 0.1), 0px 2px 20px 0px rgba(27, 19, 98, 0.08);
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0em;
+  user-select: none;
+  color: #2A2B2E;
+}
+.all .container .yd-translate-loader-block[data-v-d3135d60] {
+  position: absolute;
+  top: var(--147b79a2);
+  left: var(--7afb4d26);
+  width: var(--5a3ced10);
+  height: var(--5a3ced10);
+  background-image: var(--3fa19693);
+  /* 确保这里是正确的图片路径 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 10px rgba(56, 112, 200, 0.16);
+  overflow: hidden;
+  /* 保持子元素的圆角效果 */
+}
+.all .container .yd-translate-loader-block[data-v-d3135d60]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: linear-gradient(to left bottom, rgba(38, 132, 255, 0.6), rgba(120, 85, 250, 0.6));
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.all .container .tip[data-v-d3135d60] {
+  background-color: #F9FBFF;
+  padding: 8px;
+  border-radius: 8px;
+  height: 400px;
+  border: 1px solid #D8D9DB;
+}</style><div data-v-d3135d60="" class="all notranslate" style="--5a3ced10: 24px; --58dc89c6: 24px; --c03ec7f0: 0px; --7808ebd8: 0px; --891c21b0: 0px; --5934d8d6: 0px; --4d327ada: 0px; --18678bd3: 0px; --147b79a2: -16px; --7afb4d26: -44px; --4a440a69: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block.svg); --4809e853: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block-h.svg); --11da4116: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block-h-llm.svg); --523390c5: undefined; --178a82d2: undefined; --3fa19693: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block-l.gif);"><!----></div></template></yd-mg-block-icon><yd-image-ocr style="z-index: 2147483647;"><template shadowrootmode="open"><style>@charset "UTF-8";
+.modal-overlay[data-v-04ce0a75] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content[data-v-04ce0a75] {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  width: 800px;
+  height: 500px;
+  flex-direction: column;
+  position: relative;
+}
+.modal-header[data-v-04ce0a75] {
+  display: flex;
+  justify-content: flex-end;
+  height: 24px;
+}
+.modal-body[data-v-04ce0a75] {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+.modal-body .imageContainer[data-v-04ce0a75] {
+  flex: 2;
+  justify-content: center;
+}
+.modal-body .img[data-v-04ce0a75] {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+.modal-body .img .box[data-v-04ce0a75] {
+  position: absolute;
+  border: #333 3px solid;
+}
+.modal-body .text-content[data-v-04ce0a75] {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* 根据需要调整文本内容的样式 */
+}
+.modal-body .text-content .text[data-v-04ce0a75] {
+  overflow-y: auto;
+  height: 450px;
+}
+.modal-body .text-content .toolbar[data-v-04ce0a75] {
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.close-button[data-v-04ce0a75] {
+  background-color: transparent;
+  /* 透明背景 */
+  border: none;
+  /* 去除边框 */
+  cursor: pointer;
+  /* 鼠标悬停时显示指针 */
+  outline: none;
+  /* 去除焦点轮廓 */
+  position: absolute;
+  /* 绝对定位 */
+  top: 10px;
+  /* 距顶部的距离 */
+  right: 10px;
+  /* 距右边的距离 */
+  font-size: 24px;
+  /* 字体大小 */
+  line-height: 24px;
+  /* 行高，以确保垂直居中 */
+  color: #333;
+  /* 字体颜色 */
+  font-weight: bold;
+  /* 字体加粗 */
+}
+.close-button[data-v-04ce0a75]:hover {
+  color: #666;
+  /* 鼠标悬停时的颜色变化 */
+}
+.line[data-v-04ce0a75], .redline[data-v-04ce0a75] {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 使用无衬线字体 */
+  font-size: 16px;
+  /* 设置合适的字体大小 */
+  line-height: 24px;
+  color: #333;
+  /* 文字颜色 */
+  padding: 3px 3px 3px 6px;
+  /* 内边距 */
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-left-color 0.3s;
+  /* 背景色和边框颜色变化的过渡效果 */
+  border-left: 3px solid #ddd;
+  /* 设置灰色的左边框 */
+}
+.redline[data-v-04ce0a75] {
+  border-left-color: #e53935;
+  /* 鼠标悬停时边框颜色变为红色 */
+  background-color: #f5f5f5;
+}
+.button[data-v-04ce0a75] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #FB4A3E;
+  /* 一个明亮但不饱和的红色 */
+  color: white;
+  /* 文本颜色为白色 */
+  padding: 5px 10px;
+  /* 按钮内边距 */
+  border: none;
+  /* 无边框 */
+  border-radius: 5px;
+  /* 轻微的圆角 */
+  font-size: 10px;
+  text-transform: uppercase;
+  /* 文本大写 */
+  cursor: pointer;
+  /* 鼠标悬停时的指针样式 */
+  transition: background-color 0.3s;
+  /* 背景颜色变化的过渡效果 */
+}
+.button[data-v-04ce0a75]:hover {
+  background-color: #d32f2f;
+  /* 鼠标悬停时的背景颜色稍暗 */
+}
+.button[data-v-04ce0a75]:active {
+  background-color: #c62828;
+  /* 鼠标点击时的背景颜色更暗 */
+}
+.button[data-v-04ce0a75]:disabled {
+  background-color: #ef9a9a;
+  /* 禁用状态的按钮颜色更亮，更少饱和度 */
+  cursor: default;
+  /* 禁用状态的鼠标样式 */
+}
+.loading-indicator[data-v-04ce0a75] {
+  /* 添加你的样式，比如居中显示、动画等 */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  /* ...其他样式 */
+}
+.message[data-v-04ce0a75] {
+  position: absolute;
+  top: 50%;
+  /* 定位到父元素的中间 */
+  left: 50%;
+  /* 定位到父元素的中间 */
+  transform: translate(-50%, -50%);
+  /* 使用 transform 实现精确居中 */
+  padding: 10px;
+  background-color: white;
+  /* 设置背景颜色为白色 */
+  border: 1px solid blue;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* 添加阴影效果 */
+  text-align: center;
+  z-index: 100;
+  /* 确保提示信息在其他元素上方 */
+}
+.loader[data-v-04ce0a75] {
+  border: 5px solid #f3f3f3;
+  /* 浅灰色边框 */
+  border-top: 5px solid #3498db;
+  /* 蓝色边框 */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin-04ce0a75 2s linear infinite;
+  margin-bottom: 20px;
+}
+@keyframes spin-04ce0a75 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}</style><!----></template></yd-image-ocr></body></html>
