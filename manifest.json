@@ -1,0 +1,24 @@
+{
+  "name": "专业人声节拍器",
+  "short_name": "节拍器",
+  "description": "免费在线专业节拍器，支持人声计数、多种拍号、渐进加速、预备小节等功能。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0c0e",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
